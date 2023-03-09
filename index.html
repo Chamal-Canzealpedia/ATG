@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+
+<html lang="en">
+
+<head>
+    <title>Avery Ortlund Arts</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="-" content="text/html;charset=UTF-8">
+
+    <link rel="stylesheet" href="style-2.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Fredericka+the+Great&display=swap" rel="stylesheet">
+</head>
+
+<body>
+    <hr>
+
+    <div class = "topic">
+
+        <!--Logo start-->
+            <!--<img id="logo" src="atg-logo.webp" alt="AOA logo"> -->
+
+        <!--Logo end-->
+
+        <!--Site name start-->
+        <h1 id="site-name">
+            Avery Ortlund Arts
+            </h1>    
+            <!--Site name end-->
+    </div>
+
+
+    <hr>
+
+    <!--Nav bar start-->
+    <div class="nav-bar">
+        <hr>
+<a class="active" href="index.html">Home</a>
+<a href="yourportrait.html">Your Portrait</a>
+<a href="">Ideas</a>
+<a  class="lnav" href="">Contact</a>
+<hr>
+    </div>
+    <!--Nav bar end-->
+
+<!--Side bar start-->  
+
+<div class="icon-bar">
+    <a href="#" class="facebook"><i class="fa fa-facebook"></i></a>
+    <a href="#" class="twitter"><i class="fa fa-twitter"></i></a>
+    <a href="#" class="instagram"><i class="fa fa-instagram"></i></a>
+    <a href="#" class="linkedin"><i class="fa fa-linkedin"></i></a>
+    <a href="#" class="youtube"><i class="fa fa-youtube"></i></a>
+  </div>
+<!--Side bar end-->  
+
+    <!--Photo div start-->
+    
+   <!-- Header -->
+<div class="drawings" id="pht">
+
+    <button class="btn" onclick="one()">1</button>
+    <button class="btn active" onclick="two()">2</button>
+    <button class="btn" onclick="four()">4</button>
+  </div>
+  
+<hr>
+
+  <!-- Photo Grid -->
+  <div class="row"> 
+    <div class="column">
+      <img src="atg-1.webp" style="width:100%">
+      <img src="atg-2.webp" style="width:100%">
+    </div>
+
+    <div class="column">
+      <img src="atg-3.webp" style="width:100%">
+      <img src="atg-4.webp" style="width:100%">
+    </div>
+
+    <div class="column">
+      <img src="atg-5.webp" style="width:100%">
+      <img src="atg-6.webp" style="width:100%">
+    </div>
+
+    <div class="column">
+      <img src="atg-7.webp" style="width:100%">
+      <img src="atg-8.webp" style="width:100%">
+    </div>
+  </div>
+  
+  <script>
+  // Get the elements with class="column"
+  var elements = document.getElementsByClassName("column");
+  
+  // Declare a loop variable
+  var i;
+  
+  // Full-width images
+  function one() {
+      for (i = 0; i < elements.length; i++) {
+      elements[i].style.msFlex = "100%";  // IE10
+      elements[i].style.flex = "100%";
+    }
+  }
+  
+  // Two images side by side
+  function two() {
+    for (i = 0; i < elements.length; i++) {
+      elements[i].style.msFlex = "50%";  // IE10
+      elements[i].style.flex = "50%";
+    }
+  }
+  
+  // Four images side by side
+  function four() {
+    for (i = 0; i < elements.length; i++) {
+      elements[i].style.msFlex = "25%";  // IE10
+      elements[i].style.flex = "25%";
+    }
+  }
+  
+  // Add active class to the current button (highlight it)
+  var drawings = document.getElementById("pht");
+  var btns = drawings.getElementsByClassName("btn");
+  for (var i = 0; i < btns.length; i++) {
+    btns[i].addEventListener("click", function() {
+      var current = document.getElementsByClassName("active");
+      current[0].className = current[0].className.replace(" active", "");
+      this.className += " active";
+    });
+  }
+  </script>
+    <!--Photo div end-->
+<hr>
+    <!--Footer start-->
+<div class="footer">
+    <p>
+      &copy; Avery Ortlund Arts <br>All rights reserved <br>2023
+    </p>
+</div>
+    <!--Footer end-->
+
+</body>
+
+</html>

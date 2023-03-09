@@ -1,0 +1,237 @@
+/*body style start*/
+body{
+    background-color:#a5b5a9 ;
+    font-family: 'Fredericka the Great', cursive;
+    margin-left: 10px;
+    margin-right: 10px ;
+}
+/*body style end*/
+
+/*head style start*/
+div.topic{
+    color: white;
+    background-color: #022e0e;
+    margin-bottom: 0px;
+    margin-top: 0px;
+    text-align: center;
+    width: auto;
+
+}
+
+/*
+#logo{
+    max-width: 200px;
+    max-height: 200px ;
+}
+*/
+
+#site-name{
+    text-align: center;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    font-size: calc(20px + 3vw);
+    margin: auto;
+}
+
+/*head style end*/
+
+hr{
+    border-width: calc(2px + 0.3vw);
+    border-color: green;
+    margin-top: 0px;
+    margin-bottom: 0px;
+}
+
+/*nav bar style start */
+
+div.nav-bar{
+    background-color: #022e0e;
+    width: auto;
+    overflow:visible;
+    text-align: right;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+.nav-bar a{
+    color: white;
+    text-decoration: none;
+    text-align: right;
+    margin-left: 5vw;
+    font-size: calc(8px + 2vw);
+    opacity: 80%;
+
+
+}
+
+.nav-bar a.lnav{
+    padding-right: calc(8px + 1vw);
+}
+.nav-bar a.active{
+    opacity: 100%;
+}
+
+.nav-bar a:hover{
+    cursor:pointer;
+    opacity: 100%;
+}
+/*nav bar style end */
+
+/*image style start*/
+
+* {
+    box-sizing: border-box;
+  }
+  
+
+  
+  .header {
+    text-align: center;
+    padding: 32px;
+
+  }
+  
+  .row {
+    display: -ms-flexbox; /* IE 10 */
+    display: flex;
+    -ms-flex-wrap: wrap; /* IE 10 */
+    flex-wrap: wrap;
+    padding: 0px 4px;
+    background-color: #3a6e48;
+  }
+  
+  /* Create two equal columns that sits next to each other */
+  .column {
+    -ms-flex: 50%; /* IE 10 */
+    flex: 50%;
+    padding: 0 4px;
+  }
+  
+  .column img {
+    margin-top: 8px;
+    vertical-align: middle;
+    padding: 5px 5px;
+  }
+  
+  /* Style the buttons */
+  .btn {
+    border: 2px green solid ;
+    outline: none;
+    padding: 10px 16px;
+    background-color: #022e0e;
+    cursor: pointer;
+    font-size: 18px;
+    color: #fff;
+    margin-bottom: 10px;
+    font-family: 'Fredericka the Great', cursive;
+  }
+  
+
+  .drawings{
+    text-align: center;
+    padding-top: 8px;
+  }
+
+
+
+/*image style end*/
+
+/* side bar style start*/
+
+.icon-bar {
+    position: fixed;
+    top: 50%;
+    -webkit-transform: translateY(-50%);
+    -ms-transform: translateY(-50%);
+    transform: translateY(-50%);
+  }
+  
+  /* Style the icon bar links */
+  .icon-bar a {
+    display: block;
+    text-align: center;
+    padding: calc(6px + 1vw);
+    transition: all 0.3s ease;
+    color: white;
+    font-size: calc(10px + 1vw);
+  }
+  
+  /* Style the social media icons with color, if you want */
+  .icon-bar a:hover {
+    background-color: #000;
+  }
+  
+  .facebook {
+    background: #12450d;
+    color: white;
+  }
+  
+  .twitter {
+    background: #27941e;
+    color: white;
+  }
+  
+  .instagram {
+    background: #12450d;
+    color: white;
+  }
+  
+  .linkedin {
+    background: #27941e;
+    color: white;
+  }
+  
+  .youtube {
+    background: #12450d;
+    color: white;
+  }
+  /*side bar style end*/
+
+  /*Footer styles start*/
+
+.footer{
+    text-align: center;
+    background-color: #022e0e;
+    color: white;
+}
+
+.footer p{
+    padding: 10px 10px
+}
+/*Footer styles end*/
+
+
+/*Your Portrait Page*/
+
+.det-head{
+  font-size: calc(22px + 2vw);
+}
+
+.details{
+  font-size: calc(7px + 2vw);
+  line-height: calc(15px + 5vw);
+}
+
+
+.fiverr-btn-div{
+  text-align: center;
+}
+
+.fiverr-btn{
+  background-color: #1dbf73;
+  color: white;
+  border-radius: calc(7px + 6vw);
+  font-size: calc(15px + 3vw);
+  text-align: center;
+  margin-bottom: 40px;
+  font-family: 'Crete Round', serif;
+  opacity: 90%;
+  padding: 20px 20px;
+
+}
+
+.fiverr-btn:hover{
+  opacity: 100%;
+  transform: scale(1.1);
+  transition: 0.3s;
+}
